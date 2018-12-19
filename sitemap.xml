@@ -4,6 +4,46 @@
     
     <url>
     
+      <loc>https://zaidtas.github.io/publication/nems-lincoln/</loc>
+      <lastmod>2018-12-19T13:40:23-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/publication/rss-zaid/</loc>
+      <lastmod>2018-12-19T12:32:19-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/tutorial/example/</loc>
+      <lastmod>2018-09-09T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/tutorial/</loc>
+      <lastmod>2018-09-09T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/talk/example/</loc>
+      <lastmod>2017-01-01T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://zaidtas.github.io/post/</loc>
       <lastmod>2017-01-01T00:00:00-05:00</lastmod>
     </url>
@@ -28,8 +68,50 @@
     
     <url>
     
-      <loc>https://zaidtas.github.io/</loc>
-      <lastmod>2017-10-15T00:00:00-04:00</lastmod>
+      <loc>https://zaidtas.github.io/project/external-project/</loc>
+      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/project/internal-project/</loc>
+      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/post/getting-started/</loc>
+      <lastmod>2018-01-13T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/publication_types/0/</loc>
+      <lastmod>2018-12-19T12:32:19-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/publication_types/1/</loc>
+      <lastmod>2018-12-19T13:40:23-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/tags/academic/</loc>
+      <lastmod>2018-01-13T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -45,7 +127,8 @@
     
     <url>
     
-      <loc>https://zaidtas.github.io/publication_types/</loc>
+      <loc>https://zaidtas.github.io/tags/deep-learning/</loc>
+      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -53,7 +136,59 @@
     
     <url>
     
+      <loc>https://zaidtas.github.io/tags/demo/</loc>
+      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/project/</loc>
+      <lastmod>2016-04-27T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/publication_types/</loc>
+      <lastmod>2018-12-19T12:32:19-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/slides/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/slides/example-slides/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://zaidtas.github.io/tags/</loc>
+      <lastmod>2018-01-13T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://zaidtas.github.io/</loc>
+      <lastmod>2017-10-15T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Academic</title>
+    <title>Publications on Zaid Tasneem</title>
     <link>https://zaidtas.github.io/publication/</link>
-    <description>Recent content in Publications on Academic</description>
+    <description>Recent content in Publications on Zaid Tasneem</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
@@ -11,6 +11,24 @@
     
 	<atom:link href="https://zaidtas.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>An integrated forward-view 2-axis mems scanner for compact 3D LiDAR</title>
+      <link>https://zaidtas.github.io/publication/nems-lincoln/</link>
+      <pubDate>Wed, 19 Dec 2018 13:40:23 -0500</pubDate>
+      
+      <guid>https://zaidtas.github.io/publication/nems-lincoln/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Directionally Controlled Time-of-Flight Ranging for Mobile Sensing Platforms</title>
+      <link>https://zaidtas.github.io/publication/rss-zaid/</link>
+      <pubDate>Wed, 19 Dec 2018 12:32:19 -0500</pubDate>
+      
+      <guid>https://zaidtas.github.io/publication/rss-zaid/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
