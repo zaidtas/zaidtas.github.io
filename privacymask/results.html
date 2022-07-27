@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width' />
+
+    <title>Revealing Scenes by Inverting Structure from Motion Reconstructions</title>
+    <link rel="shortcut icon" href="img/icon/favicon.png">
+    <link rel="apple-touch-icon" href="img/icon/favicon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Bootstrap core JS-->
+    <script src="bootstrap.min.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <div id="body-container" class="container">
+
+      <div class="row" style="padding-top:1em; padding-bottom:1em;">     
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h5 style="text-align: center;">CVPR 2019</h5>
+          <h1 style="text-align: center;">Revealing Scenes by Inverting Structure from Motion Reconstructions</h1>
+        </div>
+      </div> 
+
+      <div class="row">
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        </div>
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <a target="_blank" href='https://www.francescopittaluga.com/'>Francesco Pittaluga</a>
+          <p> Univ. of Florida </p>
+        </div>
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <a target="_blank" href='http://focus.ece.ufl.edu/people/'>Sanjeev Koppal</a>
+          <p> Univ. of Florida </p>
+        </div>
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <a target="_blank" href='http://www.singbingkang.com/'>Sing Bing Kang</a>
+          <p> Microsoft Research </p>
+        </div>
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <a target="_blank" href='https://snsinha.github.io/'>Sudipta Sinha</a>
+          <p> Microsoft Research </p>
+        </div>
+         <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:3.75em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: .5em;">
+          <h2 style="margin-bottom: .2em;">Effect of Input Attributes</h2>
+          <p style="margin-bottom:.25em;">Four example results from models trained with different sets of input attributes. For each example, the left image depicts the original image and the right image shows the result of CoarseNet + RefineNet. Hover over the buttons below to compare the results.</p>
+          <button type="button" class="btn btn-default btn-s toggle-btn active inp" btn-cls="inp" img-cls="z">Depth</button> 
+          <button type="button" class="btn btn-default btn-s toggle-btn inp" btn-cls="inp" img-cls="zc">Depth + Color </button>
+          <button type="button" class="btn btn-default btn-s toggle-btn inp" btn-cls="inp" img-cls="zs">Depth + SIFT</button>
+          <button type="button" class="btn btn-default btn-s toggle-btn inp" btn-cls="inp" img-cls="zsc">Depth + Color + SIFT</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-0">
+          <img src="img/input/02_orig.jpg" class="r0 c0" />
+          <img src="img/input/04_orig.jpg" class="r1 c0" />
+          <p class="caption">Original Image</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-1">
+          <img src="img/input/02_z.jpg" class="inp z r0 c1"/>
+          <img src="img/input/02_zc.jpg" class="inp zc r0 c1" style="display:none;" />
+          <img src="img/input/02_zs.jpg" class="inp zs r0 c1" style="display:none;" />
+          <img src="img/input/02_zsc.jpg" class="inp zsc r0 c1" style="display:none;" />
+
+          <img src="img/input/04_z.jpg" class="inp z r1 c1" />
+          <img src="img/input/04_zc.jpg" class="inp zc r1 c1" style="display:none;" />
+          <img src="img/input/04_zs.jpg" class="inp zs r1 c1" style="display:none;" />
+          <img src="img/input/04_zsc.jpg" class="inp zsc r1 c1" style="display:none;" />
+          <p class="caption">Reconstruction</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-2">
+          <img src="img/input/05_orig.jpg" class="r0 c2"/>
+          <img src="img/input/06_orig.jpg" class="r1 c2"/>
+          <p class="caption">Original Image</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-3">
+          <img src="img/input/05_z.jpg" class="inp z r0 c3" />
+          <img src="img/input/05_zc.jpg" class="inp zc r0 c3" style="display:none;" />
+          <img src="img/input/05_zs.jpg" class="inp zs r0 c3" style="display:none;" />
+          <img src="img/input/05_zsc.jpg" class="inp zsc r0 c3" style="display:none;" />
+
+          <img src="img/input/06_z.jpg" class="inp z r1 c3" />
+          <img src="img/input/06_zc.jpg" class="inp zc r1 c3" style="display:none;" />
+          <img src="img/input/06_zs.jpg" class="inp zs r1 c3" style="display:none;" />
+          <img src="img/input/06_zsc.jpg" class="inp zsc r1 c3" style="display:none;" />
+          <p class="caption">Reconstruction</p>
+        </div> 
+      </div>
+
+
+
+
+      <div class="row" style="margin-top:8em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: .5em;">
+          <h2 style="margin-bottom: .1em;">Effect of Input Sparsity</h2>
+          <p style="margin-bottom:.25em;">Four example results from the same model, but for inputs with different degrees of sparsity (% of SfM points kept). For each example, the left image shows the input sparsity and the right image shows the result of CoarseNet + RefineNet. CoarseNet and RefineNet were trained on depth, color and SIFT. Hover over the three buttons below to compare the results. </p>
+            <button type="button" class="btn btn-default btn-s toggle-btn active sparsity" btn-cls="sparsity" img-cls="twenty">20%</button> 
+            <button type="button" class="btn btn-default btn-s toggle-btn sparsity" btn-cls="sparsity" img-cls="sixty">60%</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn sparsity" btn-cls="sparsity" img-cls="hundred">100%</button>
+        </div>
+      </div>
+
+      <div class="row row-img">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-0">
+          <img src="img/sparsity/01_20_inp.jpg" class="sparsity twenty r0 c0" />
+          <img src="img/sparsity/01_60_inp.jpg" class="sparsity sixty r0 c0" style="display:none;" />
+          <img src="img/sparsity/01_100_inp.jpg" class="sparsity hundred r0 c0" style="display:none;" />
+          
+          <img src="img/sparsity/03_20_inp.jpg" class="sparsity twenty r1 c0" />
+          <img src="img/sparsity/03_60_inp.jpg" class="sparsity sixty r1 c0" style="display:none;" />
+          <img src="img/sparsity/03_100_inp.jpg" class="sparsity hundred r1 c0" style="display:none;" />
+          <p class="caption">Input Points</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-1">
+          <img src="img/sparsity/01_20_rec.jpg" class="sparsity twenty r0 c1"/>
+          <img src="img/sparsity/01_60_rec.jpg" class="sparsity sixty r0 c1" style="display:none;" />
+          <img src="img/sparsity/01_100_rec.jpg" class="sparsity hundred r0 c1" style="display:none;" />
+
+          <img src="img/sparsity/03_20_rec.jpg" class="sparsity twenty r1 c1" />
+          <img src="img/sparsity/03_60_rec.jpg" class="sparsity sixty r1 c1" style="display:none;" />
+          <img src="img/sparsity/03_100_rec.jpg" class="sparsity hundred r1 c1" style="display:none;" />
+          <p class="caption">Reconstruction</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-2">
+          <img src="img/sparsity/05_20_inp.jpg" class="sparsity twenty r0 c2"/>
+          <img src="img/sparsity/05_60_inp.jpg" class="sparsity sixty r0 c2" style="display:none;" />
+          <img src="img/sparsity/05_100_inp.jpg" class="sparsity hundred r0 c2" style="display:none;" />
+
+          <img src="img/sparsity/02_20_inp.jpg" class="sparsity twenty r1 c2" />
+          <img src="img/sparsity/02_60_inp.jpg" class="sparsity sixty r1 c2" style="display:none;" />
+          <img src="img/sparsity/02_100_inp.jpg" class="sparsity hundred r1 c2" style="display:none;" />
+          <p class="caption">Input Points</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-3">
+          <img src="img/sparsity/05_20_rec.jpg" class="sparsity twenty r0 c3"/>
+          <img src="img/sparsity/05_60_rec.jpg" class="sparsity sixty r0 c3" style="display:none;" />
+          <img src="img/sparsity/05_100_rec.jpg" class="sparsity hundred r0 c3" style="display:none;" />
+
+          <img src="img/sparsity/02_20_rec.jpg" class="sparsity twenty r1 c3" />
+          <img src="img/sparsity/02_60_rec.jpg" class="sparsity sixty r1 c3" style="display:none;" />
+          <img src="img/sparsity/02_100_rec.jpg" class="sparsity hundred r1 c3" style="display:none;" />
+          <p class="caption">Reconstruction</p>
+        </div> 
+      </div>
+
+
+
+
+      <div class="row" style="margin-top:8em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: .5em; ">
+            <h2 style="margin-bottom: .1em;">Effect of RefineNet</h2>
+            <p style="text-align:left; margin-bottom:.25em;">Four examples comparing results from CoarseNet and CoarseNet + RefineNet. For each example, two images are shown. The left image is the result of a model trained on depth and SIFT as input attributes. The right image is the result of a model trained on depth, color and SIFT as input attributes. Hover over the two buttons below to compare the results.</p>
+            <button type="button" class="btn btn-default btn-s toggle-btn active ref" btn-cls="ref" img-cls="coarse">CoarseNet</button> 
+            <button type="button" class="btn btn-default btn-s toggle-btn ref" btn-cls="ref" img-cls="refine">CoarseNet + RefineNet</button>
+        </div>
+      </div>
+
+      <div class="row row-img" style="">    
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-0">
+          <img src="img/refine/00_coarse_zs.jpg" class="ref coarse r0 c0" />
+          <img src="img/refine/00_refine_zs.jpg" class="ref refine r0 c0" style="display:none;" />
+          <img src="img/refine/02_coarse_zs.jpg" class="ref coarse r1 c0" />
+          <img src="img/refine/02_refine_zs.jpg" class="ref refine r1 c0" style="display:none;" />
+          <p class="caption">Depth + SIFT</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-1">
+          <img src="img/refine/00_coarse_zsc.jpg" class="ref coarse r0 c1" />
+          <img src="img/refine/00_refine_zsc.jpg" class="ref refine r0 c1" style="display:none;" />
+          <img src="img/refine/02_coarse_zsc.jpg" class="ref coarse r1 c1" />
+          <img src="img/refine/02_refine_zsc.jpg" class="ref refine r1 c1" style="display:none;" />
+          <p class="caption">Depth + SIFT + Color</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-2">
+          <img src="img/refine/01_coarse_zs.jpg" class="ref coarse r0 c2" />
+          <img src="img/refine/01_refine_zs.jpg" class="ref refine r0 c2" style="display:none;" />
+          <img src="img/refine/03_coarse_zs.jpg" class="ref coarse r1 c2" />
+          <img src="img/refine/03_refine_zs.jpg" class="ref refine r1 c2" style="display:none;" />
+          <p class="caption">Depth + SIFT</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-3">
+          <img src="img/refine/01_coarse_zsc.jpg" class="ref coarse r0 c3" />
+          <img src="img/refine/01_refine_zsc.jpg" class="ref refine r0 c3" style="display:none;" />
+          <img src="img/refine/03_coarse_zsc.jpg" class="ref coarse r1 c3" />
+          <img src="img/refine/03_refine_zsc.jpg" class="ref refine r1 c3" style="display:none;" />
+          <p class="caption">Depth + SIFT + Color</p>
+        </div>
+      </div>
+    
+    <div class="row" style="margin-bottom: 10em;"></div>
+   </div>
+  </body>
+
+      <script>
+        $('.toggle-btn').on('click mouseover', function () {
+          // set active button state
+          $('button.'+$(this).attr('btn-cls')).removeClass('active');
+          $(this).addClass('active');
+          
+          // toggle images
+          $('img.'+$(this).attr('btn-cls')).hide();
+          $('img.'+$(this).attr('img-cls')).show();
+        });
+      </script>
+
+</html>
