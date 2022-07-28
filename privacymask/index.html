@@ -100,7 +100,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h2>Abstract</h2>
-          <p>Many 3D vision systems localize cameras within a scene using 3D point clouds. Such point clouds are often obtained using structure from motion (SfM), after which the images are discarded to preserve privacy. In this paper, we show, for the first time, that such point clouds retain enough information to reveal scene appearance and compromise privacy. We present a privacy attack that reconstructs color images of the scene from the point cloud. Our method is based on a cascaded U-Net that takes as input, a 2D multichannel image of the points rendered from a specific viewpoint containing point depth and optionally color and SIFT descriptors and outputs a color image of the scene from that viewpoint. Unlike previous feature inversion methods, <!-- [<a href='' target='new'>link1</a>, <a href='' target='new'>link2</a>], --> we deal with highly sparse and irregular 2D point distributions and inputs where many point attributes are missing, namely keypoint orientation and scale, the descriptor image source and the 3D point visibility. We evaluate our attack algorithm on the <a href='http://www.cs.cornell.edu/projects/megadepth/' target="_blank">MegaDepth</a> and <a href='https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html' target="_blank">NYU</a> datasets and analyze the significance of the point cloud attributes. Finally, we show that novel views can also be generated thereby enabling compelling virtual tours of the underlying scene.</p>
+          <p>With over a billion sold each year, cameras are not only becoming ubiquitous, but are driving progress in a wide range of domains such as mixed reality, robotics, and more. However, severe concerns regarding the privacy implications of camera-based solutions currently limit the range of environments where cameras can be deployed. The key question we address is: Can cameras be enhanced with a scalable solution to preserve users' privacy without degrading their machine intelligence capabilities? Our solution is a novel end-to-end adversarial learning pipeline in which a phase mask placed at the aperture plane of a camera is jointly optimized with respect to privacy and utility objectives. We conduct an extensive design space analysis to determine operating points with desirable privacy-utility tradeoffs that are also amenable to sensor fabrication and real-world constraints. We demonstrate the first working prototype that enables passive depth estimation while inhibiting face identification.</p>
 
           <h2 style="padding-top: 1em;">Cite</h2>
 <pre>
@@ -118,20 +118,20 @@
 
       <div class="row" style="margin-top:4em;margin-bottom:0em;">
         <div class="icon col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <a target="_blank" href="pdf/revealing_scenes_by_inverting_structure_from_motion_reconstructions.pdf">
+          <a target="_blank" href="pdf/privacy_preserving_depth_estimation.pdf">
           <img src="img/icon/paper.png" alt="Paper" />
           <p> Paper </p> 
         </a>
         </div>
         <div class="icon col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <a target="_blank" href="pdf/revealing_scenes_by_inverting_structure_from_motion_reconstructions_supplementary.pdf">
+          <a target="_blank" href="pdf/privacy_preserving_depth_estimation-supp.pdf">
           <img src="img/icon/supplementary.png" alt="Supplmentary"/> 
           <p> Supplementary </p>
           </a>
         </div>
         <div class="icon col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <a target="_blank" href="https://github.com/francescopittaluga/invsfm">
-          <img src="img/icon/code.png" alt="Source Code"/> 
+          <!-- <a target="_blank" href="https://github.com/francescopittaluga/invsfm"> -->
+          <img src="img/icon/coming_soon.png" alt="Source Code"/> 
           <p> Source Code </p>
           </a>
         </div> 
