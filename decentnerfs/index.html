@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width' />
+
+    <title>DecentNeRFs</title>
+    <link rel="shortcut icon" href="img/icon/Decentralization_diagram.png">
+    <link rel="apple-touch-icon" href="img/icon/Decentralization_diagram.png">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Bootstrap core JS-->
+    <script src="bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+    <div class="row color-row"> </div> 
+
+    <div id="body-container" class="container">
+
+
+      <div class="row" style="padding-top:1em; padding-bottom:1em;">     
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <!-- <h5 style="text-align: center;">ECCV 2022</h5> -->
+          <h1 style="text-align: center;">DecentNeRFs: Decentralized Neural Radiance Fields<br> from Crowdsourced Images</h1>
+        </div>
+      </div> 
+
+      <div class="row" >
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        </div>
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <a target="_blank" href='https://zaidtas.github.io/' target='new'>Zaid Tasneem</a>
+          <p> Rice University </p>
+        </div>
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <a target="_blank" href='https://akshatdave.github.io/' target='new'>Akshat Dave</a>
+          <p> MIT </p>
+        </div>
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <a target="_blank" href='https://www.linkedin.com/in/tremblerz' target='new'>Abhishek Singh</a>
+          <p> MIT </p>
+        </div>
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <a target="_blank" href='https://www.media.mit.edu/people/ktiwary/overview/'>Kushagra Tiwary</a>
+           <p> MIT </p>
+        </div>
+         <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        </div>
+      </div>
+      <div class="row" >
+        <div class="author col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        </div>
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <a target="_blank" href='https://praneeth.mit.edu/' target='new'>Praneeth Vepakomma</a>
+          <p> MIT </p>
+        </div>
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <a target="_blank" href='https://computationalimaging.rice.edu/team/ashok-veeraraghavan/' target='new'>Ashok Veeraraghavan</a>
+          <p> Rice University </p>
+        </div>
+        <div class="author col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <a target="_blank" href='https://www.media.mit.edu/people/raskar/overview/'>Ramesh Raskar</a>
+           <p> MIT </p>
+        </div>
+         <div class="author col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        </div>
+      </div>
+
+      <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="">
+                            <image src="img/icon/paper0.png" height="120px"><br>
+                                <h4>
+                                    <a href="https://arxiv.org/abs/2403.13199">
+                                        <b>Paper</b>
+                                      </a>
+                                </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            <image src="img/icon/supplementary0.png" height="120px"><br>
+                                <h4>
+                                    <a href="pdf/Crowdsourced_NeRFs_supp.pdf">
+                                        <b>Supplementary Material</b>
+                                      </a>
+                                </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            <image src="img/icon/youtube_icon_dark.png" height="120px"><br>
+                                <h4>
+                                    <a href="https://www.youtube.com/watch?v=jloeVqQh9zE">
+                                        <b>Youtube Video</b>
+                                </h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+      <div class="row" style="margin-top:2em;">    
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="img/results/teaser_v7.png" style="width:100%;" />
+        </div>
+      </div>
+
+
+      <!-- <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p> <b>SYNTHESIZING IMAGERY FROM A SFM POINT CLOUD</b> -- From left to right: (a) Top view of a SfM reconstruction of an indoor scene, (b) 3D points projected into a viewpoint associated with a source image, (c) the image reconstructed using our technique, and (d) the source image. The reconstructed image is very detailed and closely resembles the source image.</p>
+        </div>
+      </div> -->
+
+   <!--    <div style="margin-top:4em; margin-bottom:2em;" class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class='videoWrapper'><iframe width="560" height="315" src="https://www.youtube.com/embed/GQSfg6eHGbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> -->
+
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Abstract</h2>
+          <p>Neural radiance fields (NeRFs) show potential for transforming images captured worldwide into immersive 3D visual experiences. However, most of this captured visual data remains siloed in our camera rolls as these images contain personal details. Even if made public, the problem of learning 3D representations of billions of scenes captured daily in a centralized manner is computationally intractable. Our approach, DecentNeRF, is the first attempt at decentralized, crowd-sourced NeRFs that require &sim;10<sup>4</sup>&times; less server computing for a scene than a centralized approach. Instead of sending the raw data, our approach requires users to send a 3D representation, distributing the high computation cost of training centralized NeRFs between the users. It learns photorealistic scene representations by decomposing users' 3D views into personal and global NeRFs and a novel optimally weighted aggregation of only the latter. We validate the advantage of our approach to learn NeRFs with photorealism and minimal server computation cost on structured synthetic and real-world photo tourism datasets. We further analyze how secure aggregation of global NeRFs in DecentNeRF minimizes the undesired reconstruction of personal content by the server.</p>
+
+          <h2 style="padding-top: 1em;">Cite</h2>
+          <pre>
+          @misc{tasneem2024decentnerfs,
+                title={DecentNeRFs: Decentralized Neural Radiance Fields from Crowdsourced Images}, 
+                author={Zaid Tasneem and Akshat Dave and Abhishek Singh and Kushagra Tiwary and Praneeth Vepakomma and Ashok Veeraraghavan and Ramesh Raskar},
+                year={2024},
+                eprint={2403.13199},
+                archivePrefix={arXiv},
+                primaryClass={cs.CV}
+          }
+          </pre>
+        
+
+      <!-- <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-0">
+          <img src="img/input/02_orig.jpg" class="r0 c0" />
+          <img src="img/input/04_orig.jpg" class="r1 c0" />
+          <p class="caption">Original Image</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-1">
+          <img src="img/input/02_z.jpg" class="inp z r0 c1"/>
+          <img src="img/input/02_zc.jpg" class="inp zc r0 c1" style="display:none;" />
+          <img src="img/input/02_zs.jpg" class="inp zs r0 c1" style="display:none;" />
+          <img src="img/input/02_zsc.jpg" class="inp zsc r0 c1" style="display:none;" />
+
+          <img src="img/input/04_z.jpg" class="inp z r1 c1" />
+          <img src="img/input/04_zc.jpg" class="inp zc r1 c1" style="display:none;" />
+          <img src="img/input/04_zs.jpg" class="inp zs r1 c1" style="display:none;" />
+          <img src="img/input/04_zsc.jpg" class="inp zsc r1 c1" style="display:none;" />
+          <p class="caption">Reconstruction</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-2">
+          <img src="img/input/05_orig.jpg" class="r0 c2"/>
+          <img src="img/input/06_orig.jpg" class="r1 c2"/>
+          <p class="caption">Original Image</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-3">
+          <img src="img/input/05_z.jpg" class="inp z r0 c3" />
+          <img src="img/input/05_zc.jpg" class="inp zc r0 c3" style="display:none;" />
+          <img src="img/input/05_zs.jpg" class="inp zs r0 c3" style="display:none;" />
+          <img src="img/input/05_zsc.jpg" class="inp zsc r0 c3" style="display:none;" />
+
+          <img src="img/input/06_z.jpg" class="inp z r1 c3" />
+          <img src="img/input/06_zc.jpg" class="inp zc r1 c3" style="display:none;" />
+          <img src="img/input/06_zs.jpg" class="inp zs r1 c3" style="display:none;" />
+          <img src="img/input/06_zsc.jpg" class="inp zsc r1 c3" style="display:none;" />
+          <p class="caption">Reconstruction</p>
+        </div> 
+      </div> -->
+
+
+
+
+     <!--  <div class="row" style="margin-top:2.5em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: .5em;">
+          <h3 style="margin-bottom: .1em;">Effect of Input Sparsity</h3>
+          <p style="margin-bottom:.25em;">Four example results from the same model, but for inputs with different degrees of sparsity (% of SfM points kept). For each example, the left image shows the input sparsity and the right image shows the result of CoarseNet + RefineNet. CoarseNet and RefineNet were trained on depth, color and SIFT. Hover over the three buttons below to compare the results. </p>
+            <button type="button" class="btn btn-default btn-s toggle-btn active sparsity" btn-cls="sparsity" img-cls="twenty">20%</button> 
+            <button type="button" class="btn btn-default btn-s toggle-btn sparsity" btn-cls="sparsity" img-cls="sixty">60%</button>
+            <button type="button" class="btn btn-default btn-s toggle-btn sparsity" btn-cls="sparsity" img-cls="hundred">100%</button>
+        </div>
+      </div>
+
+      <div class="row row-img">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-0">
+          <img src="img/sparsity/01_20_inp.jpg" class="sparsity twenty r0 c0" />
+          <img src="img/sparsity/01_60_inp.jpg" class="sparsity sixty r0 c0" style="display:none;" />
+          <img src="img/sparsity/01_100_inp.jpg" class="sparsity hundred r0 c0" style="display:none;" />
+          
+          <img src="img/sparsity/03_20_inp.jpg" class="sparsity twenty r1 c0" />
+          <img src="img/sparsity/03_60_inp.jpg" class="sparsity sixty r1 c0" style="display:none;" />
+          <img src="img/sparsity/03_100_inp.jpg" class="sparsity hundred r1 c0" style="display:none;" />
+          <p class="caption">Input Points</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-1">
+          <img src="img/sparsity/01_20_rec.jpg" class="sparsity twenty r0 c1"/>
+          <img src="img/sparsity/01_60_rec.jpg" class="sparsity sixty r0 c1" style="display:none;" />
+          <img src="img/sparsity/01_100_rec.jpg" class="sparsity hundred r0 c1" style="display:none;" />
+
+          <img src="img/sparsity/03_20_rec.jpg" class="sparsity twenty r1 c1" />
+          <img src="img/sparsity/03_60_rec.jpg" class="sparsity sixty r1 c1" style="display:none;" />
+          <img src="img/sparsity/03_100_rec.jpg" class="sparsity hundred r1 c1" style="display:none;" />
+          <p class="caption">Reconstruction</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-2">
+          <img src="img/sparsity/05_20_inp.jpg" class="sparsity twenty r0 c2"/>
+          <img src="img/sparsity/05_60_inp.jpg" class="sparsity sixty r0 c2" style="display:none;" />
+          <img src="img/sparsity/05_100_inp.jpg" class="sparsity hundred r0 c2" style="display:none;" />
+
+          <img src="img/sparsity/02_20_inp.jpg" class="sparsity twenty r1 c2" />
+          <img src="img/sparsity/02_60_inp.jpg" class="sparsity sixty r1 c2" style="display:none;" />
+          <img src="img/sparsity/02_100_inp.jpg" class="sparsity hundred r1 c2" style="display:none;" />
+          <p class="caption">Input Points</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-3">
+          <img src="img/sparsity/05_20_rec.jpg" class="sparsity twenty r0 c3"/>
+          <img src="img/sparsity/05_60_rec.jpg" class="sparsity sixty r0 c3" style="display:none;" />
+          <img src="img/sparsity/05_100_rec.jpg" class="sparsity hundred r0 c3" style="display:none;" />
+
+          <img src="img/sparsity/02_20_rec.jpg" class="sparsity twenty r1 c3" />
+          <img src="img/sparsity/02_60_rec.jpg" class="sparsity sixty r1 c3" style="display:none;" />
+          <img src="img/sparsity/02_100_rec.jpg" class="sparsity hundred r1 c3" style="display:none;" />
+          <p class="caption">Reconstruction</p>
+        </div> 
+      </div>
+ -->
+
+
+
+      <!-- <div class="row" style="margin-top:2.5em;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: .5em; ">
+            <h3 style="margin-bottom: .1em;">Effect of RefineNet</h3>
+            <p style="text-align:left; margin-bottom:.25em;">Four examples comparing results from CoarseNet and CoarseNet + RefineNet. For each example, two images are shown. The left image is the result of a model trained on depth and SIFT as input attributes. The right image is the result of a model trained on depth, color and SIFT as input attributes. Hover over the two buttons below to compare the results.</p>
+            <button type="button" class="btn btn-default btn-s toggle-btn active ref" btn-cls="ref" img-cls="coarse">CoarseNet</button> 
+            <button type="button" class="btn btn-default btn-s toggle-btn ref" btn-cls="ref" img-cls="refine">CoarseNet + RefineNet</button>
+        </div>
+      </div>
+
+      <div class="row row-img" style="">    
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-0">
+          <img src="img/refine/00_coarse_zs.jpg" class="ref coarse r0 c0" />
+          <img src="img/refine/00_refine_zs.jpg" class="ref refine r0 c0" style="display:none;" />
+          <img src="img/refine/02_coarse_zs.jpg" class="ref coarse r1 c0" />
+          <img src="img/refine/02_refine_zs.jpg" class="ref refine r1 c0" style="display:none;" />
+          <p class="caption">Depth + SIFT</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-1">
+          <img src="img/refine/00_coarse_zsc.jpg" class="ref coarse r0 c1" />
+          <img src="img/refine/00_refine_zsc.jpg" class="ref refine r0 c1" style="display:none;" />
+          <img src="img/refine/02_coarse_zsc.jpg" class="ref coarse r1 c1" />
+          <img src="img/refine/02_refine_zsc.jpg" class="ref refine r1 c1" style="display:none;" />
+          <p class="caption">Depth + SIFT + Color</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-2">
+          <img src="img/refine/01_coarse_zs.jpg" class="ref coarse r0 c2" />
+          <img src="img/refine/01_refine_zs.jpg" class="ref refine r0 c2" style="display:none;" />
+          <img src="img/refine/03_coarse_zs.jpg" class="ref coarse r1 c2" />
+          <img src="img/refine/03_refine_zs.jpg" class="ref refine r1 c2" style="display:none;" />
+          <p class="caption">Depth + SIFT</p>
+        </div> 
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-3">
+          <img src="img/refine/01_coarse_zsc.jpg" class="ref coarse r0 c3" />
+          <img src="img/refine/01_refine_zsc.jpg" class="ref refine r0 c3" style="display:none;" />
+          <img src="img/refine/03_coarse_zsc.jpg" class="ref coarse r1 c3" />
+          <img src="img/refine/03_refine_zsc.jpg" class="ref refine r1 c3" style="display:none;" />
+          <p class="caption">Depth + SIFT + Color</p>
+        </div>
+      </div> -->
+    
+
+
+
+
+    <div class="row" style="margin-bottom: 10em;"></div>
+   </div>
+
+    </div>
+  </body>
+
+
+      <!-- <script>
+        $('.toggle-btn').on('click mouseover', function () {
+          // set active button state
+          $('button.'+$(this).attr('btn-cls')).removeClass('active');
+          $(this).addClass('active');
+          
+          // toggle images
+          $('img.'+$(this).attr('btn-cls')).hide();
+          $('img.'+$(this).attr('img-cls')).show();
+        });
+      </script> -->
+
+
+</html>
