@@ -103,7 +103,7 @@
                             <a href="">
                             <image src="img/icon/youtube_icon_dark.png" height="120px"><br>
                                 <h4>
-                                    <a href="Link Broken">
+                                    <a href="https://youtu.be/oWKgDI-AJNQ">
                                         <b>Youtube Video</b>
                                 </h4>
                             </a>
@@ -114,7 +114,7 @@
 
       <div class="row" style="margin-top:2em;">    
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <img src="img/results/teaser_v7.png" style="width:100%;" />
+          <img src="img/results/decentNeRF_teaser_introv5.gif" style="width:100%;" />
         </div>
       </div>
 
@@ -138,17 +138,35 @@
           <h2>Abstract</h2>
           <p>Neural radiance fields (NeRFs) show potential for transforming images captured worldwide into immersive 3D visual experiences. However, most of this captured visual data remains siloed in our camera rolls as these images contain personal details. Even if made public, the problem of learning 3D representations of billions of scenes captured daily in a centralized manner is computationally intractable. Our approach, DecentNeRF, is the first attempt at decentralized, crowd-sourced NeRFs that require &sim;10<sup>4</sup>&times; less server computing for a scene than a centralized approach. Instead of sending the raw data, our approach requires users to send a 3D representation, distributing the high computation cost of training centralized NeRFs between the users. It learns photorealistic scene representations by decomposing users' 3D views into personal and global NeRFs and a novel optimally weighted aggregation of only the latter. We validate the advantage of our approach to learn NeRFs with photorealism and minimal server computation cost on structured synthetic and real-world photo tourism datasets. We further analyze how secure aggregation of global NeRFs in DecentNeRF minimizes the undesired reconstruction of personal content by the server.</p>
 
+
+<h2 style="padding-top: 1em;">Approach</h2>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: 2em;"> <!-- Increased bottom padding -->
+  <img src="img/results/decentNeRF_approachv2_crop.gif" style="width:100%" />
+</div>
+
+<h2 style="padding-top: 2em;">Comparison with existing methods</h2> <!-- Increased top padding -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <img src="img/results/decentNeRF_comparsionv2.gif" style="width:100%;" />
+</div>
+
+<h2 style="padding-top: 1em;">Personal Global Separation</h2> <!-- Increased top padding -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <img src="img/results/decentNeRF_pg_seperationv2.gif" style="width:100%;" />
+</div>
+
+          
           <h2 style="padding-top: 1em;">Cite</h2>
           <pre>
-          @misc{tasneem2024decentnerfs,
-                title={DecentNeRFs: Decentralized Neural Radiance Fields from Crowdsourced Images}, 
-                author={Zaid Tasneem and Akshat Dave and Abhishek Singh and Kushagra Tiwary and Praneeth Vepakomma and Ashok Veeraraghavan and Ramesh Raskar},
-                year={2024},
-                eprint={2403.13199},
-                archivePrefix={arXiv},
-                primaryClass={cs.CV}
+          @article{tasneem2024decentnerfs,
+            title={DecentNeRFs: Decentralized Neural Radiance Fields from Crowdsourced Images},
+            author={Tasneem, Zaid and Dave, Akshat and Singh, Abhishek and Tiwary, Kushagra and Vepakomma, Praneeth and Veeraraghavan, Ashok and Raskar, Ramesh},
+            journal={arXiv preprint arXiv:2403.13199},
+            year={2024}
           }
           </pre>
+
+
+
         
 
       <!-- <div class="row">
