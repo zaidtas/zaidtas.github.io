@@ -31,7 +31,7 @@
       <div class="row" style="padding-top:1em; padding-bottom:1em;">     
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <!-- <h5 style="text-align: center;">ECCV 2022</h5> -->
-          <h1 style="text-align: center;">DecentNeRFs: Decentralized Neural Radiance Fields<br> from Crowdsourced Images</h1>
+          <h1 style="text-align: center;"><strong>DecentNeRFs</strong>: Decentralized Neural Radiance Fields<br> from Crowdsourced Images</h1>
         </div>
       </div> 
 
@@ -141,17 +141,23 @@
 
 <h2 style="padding-top: 1em;">Approach</h2>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom: 2em;"> <!-- Increased bottom padding -->
+  
   <img src="img/results/decentNeRF_approachv2_crop.gif" style="width:100%" />
+  <p> Personal and global MLPs are trained on user devices to separate personal and global content from local images. After each training round, the server performs a federation of users' global MLPs. The contribution weightage from each user is learned to improve the visual fidelity of global content. Additionally, using a secure MPC protocol helps prevent the server from accessing individual users' global MLPs. </p>
 </div>
 
 <h2 style="padding-top: 2em;">Comparison with existing methods</h2> <!-- Increased top padding -->
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <img src="img/results/decentNeRF_comparsionv2.gif" style="width:100%;" />
+  <p>DecentNeRF can learn photorealistic renderings of scenes with &sim;10<sup>4</sup>&times; less server compute than a centralized approach. The reconstruction quality of the global content is on par with a centralized baseline like NeRF-W, and significantly better than a naive decentralized approach such as Federated NeRF. Notably compared other approaches, our reconstructions do not exhibit blobs or artifacts in places where personal content was originally present in the source images.</p>
 </div>
 
-<h2 style="padding-top: 1em;">Personal Global Separation</h2> <!-- Increased top padding -->
+<h2 style="padding-top: 1em;">Separation of Personal and Global Content</h2> <!-- Increased top padding -->
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <img src="img/results/decentNeRF_pg_seperationv2.gif" style="width:100%;" />
+  <p>DecentNeRF can separate global and personal content effectively. Initially, we observe that personal content is present in the users' global MLPs. However, over multiple rounds of federation, our two-MLP approach gradually shifts the personal content onto the users' personal MLPs. This separation process results in a significant improvement in reconstruction quality at the server. </p>
+
+
 </div>
 
           
